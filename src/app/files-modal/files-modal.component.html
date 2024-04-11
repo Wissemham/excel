@@ -1,0 +1,8 @@
+<div class="container" style="max-height: 500px; overflow-y: auto;padding-top: 10px;: ">
+  <div class="card" *ngFor="let f of files" style="margin-bottom: 10px">
+    <div class="card-body" >
+      <img src="../assets/Microsoft_Excel-Logo.wine.png" alt="Excel" width="20" height="20"> <!-- Image Excel -->
+      <a (click)="onSelectFile(f)" >{{ f.name }}</a>
+    </div>
+  </div>
+</div>

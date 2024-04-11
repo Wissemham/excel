@@ -1,0 +1,17 @@
+<app-navbar (fileSelected)="handleFileSelected($event)"></app-navbar>
+<div class="wrapper">
+  <ejs-spreadsheet #spreadsheet id="spreadsheet"
+                   [openUrl]="openUrl"
+                   [saveUrl]="saveUrl"
+                   (created)="onCreated()"
+                   width='100%' height='585px'
+                    [sheets]="sheetsData">
+
+  </ejs-spreadsheet>
+</div>
+
+
+
+
+
+
